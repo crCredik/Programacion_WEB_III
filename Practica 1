@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICA 1</title>
+    <style>
+        .borde{
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            margin: 10px;
+        }
+        .layout{
+            background-color: bisque;
+            width:600px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px auto ;
+            
+        }
+        .header{
+            height: 60px;
+            background-color: brown;
+            
+        }
+        .cont{
+            height: 200px;
+            background-color: aquamarine;
+        }
+        .footter{
+            height: 60px;
+            background-color: blueviolet;
+        }
+        .cont-2{
+            display: flex;
+            place-content: center;
+        }
+        .cont-2 .cont{
+            width: 250px;
+        }
+        .cont-3{
+            display: flex;
+            place-content: center;
+        }
+        .cont-3 .cont{
+            width: 190px;
+        }
+        .nav{
+            height: 50px;
+            background-color: cornflowerblue;
 
+        }
+        h1{
+            margin: auto 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Practica 1</h1>
+    <div class="content-principal">
+        <div class="layout">
+
+            <div class="header borde">
+                <h2 >Layout de columna</h2>
+            </div>
+            <div class="cont borde">
+                <p>contenido</p>
+            </div>
+            <div class="footter borde">
+                <h2>footter</h2>
+            </div>
+        </div>
+        <div class="layout">
+            <div class="header borde">
+                <h2>Layout de dos columnas </h2>
+            </div>
+            <div class="cont-2">
+                <div class="cont borde">
+                contenido
+                </div>
+                <div class="cont borde">
+                    contenido
+                </div>
+            </div>
+            
+            <div class="footter borde">
+                <h2>footter</h2>
+            </div>
+
+        </div>
+
+
+        <div class="layout">
+            <div class="header borde">
+                <h2>Layout de tres columnas</h2>
+            </div>
+            <div class="cont-3">
+                <div class="cont borde">sidebar</div>
+                <div class="cont borde">contenido</div>
+                <div class="cont borde">sidebar</div>
+            </div>
+            <div class="footter borde">
+                <h2>Footter</h2>
+            </div>
+
+        </div>
+
+        <div class="layout">
+            <div class="header borde">
+                <h2>Layout con encabezado, contenido y pie de página</h2>
+            </div>
+            <div class="nav borde">
+                <h3>navegacion</h3>
+            </div>
+            <div class="cont borde">
+                contenido
+            </div>
+            <div class="footter borde">
+                <h2>Footter</h2>
+            </div>
+        </div>
+
+        <div class="layout">
+            <div class="header borde">
+                <h2>Layout con Grid o Flexbox</h2>
+            </div>
+            <div class="cont-3">
+                <div class="cont borde">nav</div>
+                <div class="cont borde">contenido</div>
+                <div class="cont borde">aside</div>
+            </div>
+            <div class="footter borde">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
